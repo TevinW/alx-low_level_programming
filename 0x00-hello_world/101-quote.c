@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	fputs(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19");
+	fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19", stderr);
 	return (1);
 }
 

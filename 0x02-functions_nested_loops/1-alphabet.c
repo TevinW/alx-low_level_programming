@@ -10,6 +10,6 @@ int main(void)
 	char ch = "a";
 
 	for (ch = "a"; ch <= "z"; ch++)
-		printf(ch);
+		_putchar(ch);
 	return (0);
 }

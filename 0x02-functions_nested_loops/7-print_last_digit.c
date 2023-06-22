@@ -8,11 +8,17 @@
 int print_last_digit(int n)
 {
 	if ((n % 10) == 0)
+	{
 		return (0 + '0');
+	}
 	else if (n < 0)
+	{
 		int a = -n;
 
 		return ((a % 10) + '0');
+	}
 	else
+	{
 		return ((n % 10) + '0');
+	}
 }

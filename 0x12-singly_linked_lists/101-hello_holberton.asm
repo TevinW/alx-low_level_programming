@@ -17,4 +17,5 @@ main:
     pop rbp
     mov rax, 0
     xor edi, edi
+    ret
     syscall

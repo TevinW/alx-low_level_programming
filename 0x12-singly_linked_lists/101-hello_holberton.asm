@@ -14,5 +14,6 @@ main:
     mov rsi, message
     call printf
 
+    pop rbp
     mov rax,0
     ret

@@ -3,11 +3,10 @@ section .data
     format db '%s', 0
 
 section .text
+    global main
     extern printf
 
-global _start
-
-_start:
+main:
     ; Set up the stack frame for the printf call
     push rbp
     mov rdi, format

@@ -15,10 +15,11 @@ listint_t *find_listint_loop(listint_t *head)
 		return (NULL);
 	}
 
+	s = s->next;
+	f = (f->next)->next;
+
 	while (s && f && f.next)
 	{
-		s = s->next;
-		f = (f->next)->next;
 		if (s == f)
 
 		{
@@ -32,6 +33,8 @@ listint_t *find_listint_loop(listint_t *head)
 
 			return (s);
 		}
+		s = s->next;
+		f = (f->next)->next;
 
 	}
 

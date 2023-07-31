@@ -6,37 +6,25 @@
  *
  * Return: address where loop starts, NULL (no loop)
  */
+
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *s = head, *f = head;
+	listint_t *slow = head, *fast = head;
 
-	if (!head || !head->next)
+	while (fast != NULL)
 	{
-		return (NULL);
-	}
-
-	s = s->next;
-	f = (f->next)->next;
-
-	while (s && f && f.next)
-	{
-		if (s == f)
-
+		slow = slow->next;
+		fast = fast->next->next;
+		if (slow == fast)
 		{
-			s = head;
-
-			while (s != f)
+			slow = head;
+			while (slow != fast)
 			{
-				s = s->next;
-				f = f->next;
+				slow = slow->next;
+				fast = fast->next;
 			}
-
-			return (s);
+			return (slow);
 		}
-		s = s->next;
-		f = (f->next)->next;
-
 	}
-
 	return (NULL);
 }

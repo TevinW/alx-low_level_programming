@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  * add_nodeint_end - adds a node at the end of a linked list
  * @head: pointer to the first element in the list
@@ -26,10 +25,8 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		*head = new_node;
 		return (new_node);
 	}
-
 	while (temp->next)
 		temp = temp->next;
-		
 	temp->next = new_node;
 	return (new_node);
 }

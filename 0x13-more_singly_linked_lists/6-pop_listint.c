@@ -7,16 +7,17 @@
  * Return: head node's data, 0 (linked list is empty)
  *
  */
+
 int pop_listint(listint_t **head)
 {
 	int data;
 
-	if (*head == 0)
-		return (0);
+	if (*head == NULL)
+	return (0);
 
 	data = (*head)->n;
 	free(*head);
+	
 	*head = (*head)->next;
-
 	return (data);
 }

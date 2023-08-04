@@ -2,7 +2,7 @@
 
 /**
  * main - prints n.o of arguments passed to it
- * 
+ *
  * @argc: n.o of arguments
  * @argv: array of arguments
  *

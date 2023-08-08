@@ -2,8 +2,10 @@
 
 /**
  * str_concat - concatenates 2 strings
+ *
  * @s1: string 1
  * @s2: string 2
+ *
  * Return: concatenation of s1 and s2
  */
 
@@ -29,6 +31,8 @@ char *str_concat(char *s1, char *s2)
 
 	if (s3 == NULL)
 		return (NULL);
+
+	i = j = 0;
 
 	while (s1[i] != '\0')
 	{

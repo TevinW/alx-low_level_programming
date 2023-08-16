@@ -2,11 +2,10 @@
 
 /**
  * int_index - searches for an integer
- * 
  * @array: array
  * @size: n.o of elements in array
  * @cmp: pointer to func used to compare values
- * 
+ *
  * Return: element index, -1 (no match/size <= 0)
  */
 int int_index(int *array, int size, int (*cmp)(int))
